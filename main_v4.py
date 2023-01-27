@@ -5,6 +5,10 @@ app=Flask(__name__)
 @app.route("/")
 def intex():
     return render_template("index.html")
+    
+@app.route("/usuarios")
+def usuario():
+    return render_template("usuarios.html")
 
     
 if __name__ == "__main__":
